@@ -1,0 +1,161 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+
+    <TextView
+        android:id="@+id/lblTitle"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="12dp"
+        android:layout_marginLeft="25dp"
+        android:layout_marginRight="25dp"
+        android:layout_marginTop="24dp"
+        android:gravity="center"
+        android:text="ADD ACCOUNT"
+        android:textAllCaps="true"
+        android:textColor="@android:color/black"
+        android:textSize="16sp"/>
+
+    <ScrollView
+        android:id="@+id/scroll"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@id/lblTitle"
+        android:layout_marginTop="12dp"
+        android:overScrollMode="never"
+        android:scrollbars="none">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:paddingLeft="30dp"
+            android:paddingRight="30dp">
+
+            <EditText
+                android:id="@+id/name"
+                android:layout_width="match_parent"
+                android:layout_height="40dp"
+                android:layout_marginRight="5dp"
+                android:background="@drawable/add_account_drawable"
+                android:digits="qwertzuiopasdfghjklyxcvbnmQWERTYUIOPASDFGHJKLZXCVBNM "
+                android:hint="First Name"
+                android:paddingLeft="12dp"
+                android:paddingRight="12dp"
+                android:gravity="center_vertical"
+                android:textColor="@android:color/black"
+                android:textSize="14sp"/>
+
+            <EditText
+                android:id="@+id/age"
+                android:layout_width="match_parent"
+                android:layout_height="40dp"
+                android:layout_below="@id/name"
+                android:layout_marginTop="12dp"
+                android:background="@drawable/add_account_drawable"
+                android:hint="Age"
+                android:inputType="number"
+                android:maxLength="20"
+                android:paddingLeft="12dp"
+                android:paddingRight="40dp"
+                android:gravity="center_vertical"
+                android:textColor="@android:color/black"
+                android:textSize="14sp"/>
+
+
+            <EditText
+                android:id="@+id/contactNumber"
+                android:layout_width="match_parent"
+                android:layout_height="40dp"
+                android:layout_below="@+id/age"
+                android:layout_marginTop="12dp"
+                android:background="@drawable/add_account_drawable"
+                android:hint="Emergency contact number"
+                android:inputType="phone"
+                android:maxLength="20"
+                android:paddingLeft="12dp"
+                android:paddingRight="40dp"
+                android:textColor="@android:color/black"
+                android:textSize="14sp"/>
+
+
+            <EditText
+                android:id="@+id/bloodGroup"
+                android:layout_width="match_parent"
+                android:layout_height="40dp"
+                android:layout_below="@id/contactNumber"
+                android:layout_marginTop="12dp"
+                android:background="@drawable/add_account_drawable"
+                android:hint="Blood group"
+                android:inputType="text"
+                android:paddingLeft="12dp"
+                android:paddingRight="12dp"
+                android:textColor="@android:color/black"
+                android:textSize="14sp"/>
+
+            <EditText
+                android:id="@+id/btnlocation"
+                android:layout_width="match_parent"
+                android:layout_height="40dp"
+                android:layout_below="@id/contactNumber"
+                android:layout_marginTop="12dp"
+                android:background="@drawable/add_account_drawable"
+                android:hint="Location"
+                android:inputType="text"
+                android:paddingLeft="12dp"
+                android:paddingRight="12dp"
+                android:textColor="@android:color/black"
+                android:textSize="14sp"/>
+
+            <TextView
+                android:id="@+id/btnQRCode"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/btnlocation"
+                android:layout_marginTop="10dp"
+                android:gravity="center"
+                android:padding="5dp"
+                android:text="Generate QR CODE"
+                android:textColor="@android:color/black"
+                android:textSize="14sp"/>
+
+            <ImageView
+                android:id="@+id/qrCodeImage"
+                android:layout_width="50dp"
+                android:layout_height="50dp"
+                android:layout_centerHorizontal="true"
+                android:layout_below="@+id/btnQRCode"/>
+
+            <TextView
+                android:id="@+id/btnAddAccount"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/qrCodeImage"
+                android:layout_marginTop="10dp"
+                android:gravity="center"
+                android:padding="5dp"
+                android:text="ADD ACCOUNT"
+                android:textColor="@android:color/black"
+                android:textSize="14sp"/>
+            <TextView
+                android:id="@+id/btnUpdateAccount"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/qrCodeImage"
+                android:layout_marginTop="10dp"
+                android:gravity="center"
+                android:padding="5dp"
+                android:text="UPDATE ACCOUNT"
+                android:visibility="gone"
+                android:textColor="@android:color/black"
+                android:textSize="14sp"/>
+
+
+
+        </RelativeLayout>
+
+    </ScrollView>
+
+</RelativeLayout>

@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    tools:context="com.example.coupondunia.babajobtest.MainActivity">
+
+    <TextView
+        android:id="@+id/buttonAddDel"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="@drawable/add_account_drawable"
+        android:padding="5dp"
+        android:layout_alignParentLeft="true"
+        android:layout_marginLeft="16dp"
+        android:text="Add ACCOUNT"/>
+    <TextView
+        android:id="@+id/btnMarkAttendance"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="@drawable/add_account_drawable"
+        android:padding="5dp"
+        android:layout_alignParentRight="true"
+        android:layout_marginLeft="16dp"
+        android:text="ATTENDANCE"/>
+
+    <TextView
+        android:id="@+id/header"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/buttonAddDel"
+        android:layout_marginTop="10dp"
+        android:layout_marginLeft="16dp"
+        android:padding="5dp"
+        android:background="@drawable/add_account_drawable"
+        android:text="Refresh View"/>
+    <TextView
+        android:id="@+id/datePicker"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/buttonAddDel"
+        android:layout_marginTop="10dp"
+        android:layout_marginLeft="16dp"
+        android:padding="5dp"
+        android:layout_alignParentRight="true"
+        android:background="@drawable/add_account_drawable"
+        android:text="select date"/>
+
+    <ListView
+        android:id="@+id/list"
+        android:layout_marginTop="10dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/header"
+        tools:listitem="@layout/user_info_id_card"
+        android:dividerHeight="3dp"/>
+</RelativeLayout>
